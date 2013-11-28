@@ -1,0 +1,115 @@
+  <hr>
+  </div> <!-- /container -->
+  <script src="{{path}}resources/bootstrap/assets/js/jquery.js"></script>
+  <script src="{{path}}resources/bootstrap/js/bootstrap-slider.js"></script>
+  <script src="{{path}}resources/bootstrap/js/bootstrap.min.js"></script>
+  <script src="{{path}}resources/main.js"></script>
+  <script>
+  		var filtroDesde = -1;
+		var filtroHasta = -1;  		
+  		function filtrar(){
+			console.log("antes");
+			var query = $("#val-nombre").val();
+			var desde = $("#val-desde").val().toString().replace(/\./g,'');
+			var hasta = $("#val-hasta").val().toString().replace(/\./g,'');
+			var idCategoria = $("#val-categoria").val();
+			console.log("despues");
+			var data = { 
+				query : query, 
+				desde : desde,
+				hasta : hasta,
+				idCategoria : idCategoria  
+			};
+			var s = '<form action="{{path}}lista/buscar" method="POST">'; 
+			// add inputs corresponding to your javascript object 
+			for (p in data) { 
+			    s += '<input type="hidden" name="' 
+			        + encodeURIComponent(p) + '" value="' 
+			        + encodeURIComponent(data[p]) 
+			        + '" />'; 
+			} 
+			s += '</form>'; 
+			// add the form to the document 
+			var $form = $(s).appendTo('body'); 
+			// submit it 
+			$form.submit(); 
+			console.log(data);
+		}
+
+		function rellenarDelete(id){
+			$("#IdArticulo-eliminar").val(id);
+			$("#modal-eliminar").modal("show");
+		}
+
+</script>
+<!-- si es que estamos en la pagina para agregar articulo al carrito -->
+{% if articulo %}
+<script>
+	
+
+	$( "#articulo-cantidad" ).change(function() {
+		 var precio = {{articulo.Precio}};
+		 var cantidad = $("#articulo-cantidad").val();
+		 $("#articulo-subtotal").html( precio * cantidad );
+	});
+
+	function addItem(){
+
+		var idArticulo = "{{articulo.IdArticulo}}";
+		var cantidad = $("#articulo-cantidad").val();
+
+		console.log("..... En addItem .....");
+		console.log(idArticulo);
+		console.log(cantidad);
+
+		var data = { 
+				IdArticulo : idArticulo, 
+				cantidad : cantidad,  
+			};
+			var s = '<form action="{{path}}carrito/add" method="POST">'; 
+			// add inputs corresponding to your javascript object 
+			for (p in data) { 
+			    s += '<input type="hidden" name="' 
+			        + encodeURIComponent(p) + '" value="' 
+			        + encodeURIComponent(data[p]) 
+			        + '" />'; 
+			} 
+			s += '</form>'; 
+			// add the form to the document 
+			var $form = $(s).appendTo('body'); 
+			
+			console.log("Listo el pollo...mandamos");
+			// submit it 
+			$form.submit(); 
+			
+
+	}
+
+</script>
+
+{% endif %}
+<!-- {{foo}} -->
+    <footer class="pie">
+      <br>
+      <div class="row">      
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<ul>
+				<li>Sobre GadgetStore</li>
+				<li>Descargas</li>
+				<li>Protección al Comprador</li>
+				<li>Sucursales</li>				
+			</ul>	
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<ul>
+				<li>Nosotros</li>
+				<li>Vosotros</li>
+				<li>Ellos</li>
+			</ul>	
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<h3><img src="{{path}}/img/icon1.png" width="50px" heigth="50px"> Gadget Store 2013</h3>
+		</div>	
+      </div>    
+  	</footer>
+</body>

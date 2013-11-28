@@ -1,0 +1,45 @@
+
+{% if usuario %}
+  {% include 'header-index.twig.html' %}
+{% else %}
+
+  {% include 'header-index.twig.html' %}
+  {% include 'modal.login.twig.html' %}
+  {% include 'modal.registro.twig.html' %}
+{% endif %}
+
+
+{% if mensaje %}
+  
+  <div class="alert alert-warning alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Atencion!</strong> {{mensaje}}.
+  </div>
+  
+{% endif %}
+
+<div class="container">
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>GadgetStore</h1>
+        <p>La mejor tienda de gadgets del barrio. Todo lo que necesitas en gadgets y articulos tecnologicos</p>
+        <p>
+          {% if not usuario %}
+            <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-login">Login</a>
+            <br><hr>
+
+            Si aún no eres parte <a class="btn btn-success" data-toggle="modal" data-target="#modal-registro">Registrate!</a>
+          {% else %}
+            <hr>
+            <h3>Hola {{usuario.Nombres}}, nos alegra verte de nuevo.</h3>
+            Quieres ver nuestra lista de productos? <br>
+            <a href="{{path}}lista" class="btn btn-primary btn-lg"> Ver Lista </a>
+          {% endif %}
+        </p>
+      </div>
+    </div>
+
+    <br><br><br>
+
+{% include 'footer.twig.html' %}

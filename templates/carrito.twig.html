@@ -1,0 +1,129 @@
+
+{% include 'header.twig.html' %}
+
+{% if mensaje %}
+  
+  <div class="alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Psss!</strong> {{mensaje}}.
+  </div>
+  
+{% endif %}
+
+
+<div class="modal fade" id="modal-eliminar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Eliminar Articulo</h4>
+      </div>
+      <div class="modal-body">
+        Esta seguro que desea eliminar el articulo del carrito ?
+      </div>
+      <div class="modal-footer">
+        
+      	<form action="{{path}}carrito/delete" method="post">
+      		<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button> 
+        	<input type="hidden" name="IdArticulo" id="IdArticulo-eliminar">
+        	<input type="submit" class="btn btn-primary" value="Si">
+      	</form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade" id="modal-checkout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Checkout</h4>
+      </div>
+      <div class="modal-body">
+        Desea confirmar su compra ?
+      </div>
+      <div class="modal-footer">
+      		<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button> 
+        	<a href="{{path}}checkout" class="btn btn-success">Sí</a>	
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="container">
+{% if carrito and usuario and usuario.IdCliente == carrito.IdCliente %}
+	
+	<div class="row">
+		<h1>Listado de Productos del Carrito</h1>
+	</div>
+	
+	<br>
+	<hr>
+	{% for a in articulos %}
+
+		<div class="row articulo-carrito">
+
+			<h3>{{a.Nombre}}</h3>
+			<p>{{a.Descripcion}}</p>
+		
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<center>	
+					<h4>Precio</h4>
+					<h4>{{a.Precio}}</h4>
+					</center>
+				</div>
+				
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<center>
+					<h4>Cantidad</h4>
+					<h4>{{a.Cantidad}}</h4>
+					</center>
+				</div>
+
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<center>
+					<h4>Sub-Total</h4>
+					<h4>{{a.SubTotal}}</h4>
+					</center>
+				</div>
+			</div>
+
+			<hr>
+			
+			<div class="row">
+				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+					
+				</div>
+
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<a href="{{path}}carrito/agregar/{{a.IdArticulo}}" class="btn btn-primary">Modificar</a>
+					&nbsp;&nbsp;
+					<a class="btn btn-danger" onClick="rellenarDelete({{a.IdArticulo}});">Eliminar</a>
+				</div>
+
+			</div>
+		</div>
+		
+
+	{% endfor %}
+
+	{% if articulos %}
+		<br><hr>
+		<div class="row">
+			<center>
+				<a class="btn btn-lg btn-success" data-toggle="modal" data-target="#modal-checkout">CHECKOUT</a>
+			</center>
+		</div>
+	{% endif %}
+
+{% else %}
+
+	<h2> Parece que usted no tiene permisos para ver este sitio </h2>
+
+{% endif %}
+
+
+{% include 'footer.twig.html' %}

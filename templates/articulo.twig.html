@@ -1,0 +1,60 @@
+
+{% include 'header.twig.html' %}
+
+
+<div class="container">
+
+<div class="row">
+	<center>
+		<h2>{{articulo.Nombre}}</h2>
+		<p>{{articulo.Descripcion}}</p>
+		{% if detalle %}
+		<b>Este articulo ya se encuentra en el carrito </b>
+		{% endif %}
+	</center>
+
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+		<center>
+		<h4>Precio</h4>
+		<b>{{articulo.Precio}}</b>
+		</center>
+	</div>
+	
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+		<center>
+		<h4>Cantidad</h4>
+
+		{% if detalle %}
+			<b> <input type="number" placeholder="Cantidad..." id="articulo-cantidad" value="{{detalle.Cantidad}}"> </b>
+		{% else %}
+			<b> <input type="number" placeholder="Cantidad..." id="articulo-cantidad"> </b>
+		{% endif %}
+		</center>
+	</div>
+
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+		<center>
+		<h4>SubTotal</h4>
+
+		{% if detalle %}
+			<b id="articulo-subtotal">{{detalle.SubTotal}}</b>
+		{% else %}
+			<b id="articulo-subtotal">0</b>
+		{% endif %}
+		</center>
+	</div>
+</div>
+
+<br><br><br>
+
+<div class="row">
+	<center>
+		<a href="{{path}}lista" class="btn btn-danger btn-lg">Cancelar <i class="fa fa-times"></i></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+
+		<a class="btn btn-success btn-lg" onClick="addItem();">Ordenar <i class="fa fa-check"></i></a>
+
+	</center>
+</div>
+
+{% include 'footer.twig.html' %}

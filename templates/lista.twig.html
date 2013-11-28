@@ -1,0 +1,80 @@
+
+{% include 'header.twig.html' %}
+{% include 'modal.filtro.twig.html' %}
+
+
+{% if mensaje %}
+  
+  <div class="alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Psss!</strong> {{mensaje}}.
+  </div>
+  
+{% endif %}
+
+<div class="container">
+    <div class="row"> 
+      
+        
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <form class="form-inline" method="post" action="{{path}}lista/buscar" role="form">
+            <div class="form-group col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <input type="text" class="form-control" name="query" placeholder="Buscar..." value="">
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <button type="submit" class="btn btn-default" ><i class="fa fa-search"></i></button>
+              <a href="#"  data-toggle="modal" data-target="#modal-filtro" class="btn btn-primary btn-sm" >filtros avanzados</a>
+            </div>
+          </form>
+      </div>
+      
+    </div>
+    <br>
+    <div id="productList">
+    {% for articulo in articulos %}
+      {% set c = c + 1 %}
+        {% if not c % 2 == 0 %}
+          <div class="row">
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">                
+              </div>     
+        {% endif %}
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 producto">
+            <h3> {{articulo.Nombre}} </h3>
+            <hr>
+            <p> <small> {{articulo.Descripcion}} </small> </p>            
+            <div class="row">
+              <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <b>Cantidad:</b> {{articulo.Stock}} <br>
+                <b>Precio:</b> {{articulo.Precio|number_format(0, ',', '.')}}
+              </div>
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">                
+              </div>
+            </div>
+            <div class="row">  
+              <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">                
+              </div>              
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                {% if usuario %}
+                  <a href="{{path}}carrito/agregar/{{articulo.IdArticulo}}" class="btn btn-primary"><i class="fa fa-truck"></i> Ordenar </a>
+                
+                {% endif %}
+              </div>
+            </div>      
+          </div>                            
+          {% if c % 2 == 0 %}
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">            
+            </div>
+          </div>
+            <br/>
+            <hr> 
+          {% endif %}
+    {% endfor %}
+    </div>
+    {% if fin == 1 %}
+      <div class="row">
+        <div class="span2"></div>
+          <div class="span8">            
+          </div>
+      </div>
+    {% endif %}
+{% include 'footer.twig.html' %}

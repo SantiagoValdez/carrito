@@ -1,0 +1,9 @@
+			To Do
+			======
+
+[X]		Login de Usuario
+[X]		Alta Usuario con «Mail»
+[X]		Adicion de productos al carrito.
+[X]		ABM del Carrito
+[]		Checkout con «Mail»
+

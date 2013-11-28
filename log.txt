@@ -1,0 +1,780 @@
+[2013-11-16 1010:1111:5757]    Login :: User:root Password:pepe
+[2013-11-16 10:31:58]    Login :: User:root Password:pepe
+[2013-11-16 10:37:12]    Login :: User:root Password:pepe
+[2013-11-16 10:37:38]    Login :: User:juan Password:pepe
+[2013-11-16 10:41:48]    Login :: User:root Password:pepe
+[2013-11-16 10:41:55]    Login :: User:juan Password:pepe
+[2013-11-16 10:43:28]    Login :: User:juan Password:pepe
+[2013-11-16 10:43:28]    Obtener Carrito : Carrito id : 1
+[2013-11-16 10:46:10]    Login :: User:juan Password:pepe
+[2013-11-16 10:46:10]    nuevoCarrito :: Se crea carrito para Cliente id : 1
+[2013-11-16 10:46:10]    ERROR :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'1\', \'2013-11-16\', \'0\', \'0\', \'1\')' at line 1
+[2013-11-16 10:48:06]    Login :: User:juan Password:pepe
+[2013-11-16 10:48:06]    nuevoCarrito :: Se crea carrito para Cliente id : 1
+[2013-11-16 10:48:06]    ERROR :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''IdCarrito', 'IdCliente', 'Fecha', 'CantArt', 'MontoTotal', 'Activo') VALUES (NU' at line 1
+[2013-11-16 10:50:05]    Login :: User:juan Password:pepe
+[2013-11-16 10:50:05]    nuevoCarrito :: SQL : INSERT INTO carrito ('IdCarrito', 'IdCliente', 'Fecha', 'CantArt', 'MontoTotal', 'Activo') VALUES (NULL, '1', '2013-11-16', '0', '0', '1');
+[2013-11-16 10:50:05]    nuevoCarrito :: Se crea carrito para Cliente id : 1
+[2013-11-16 10:50:06]    ERROR :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''IdCarrito', 'IdCliente', 'Fecha', 'CantArt', 'MontoTotal', 'Activo') VALUES (NU' at line 1
+[2013-11-16 10:52:48]    Login :: User:juan Password:pepe
+[2013-11-16 10:52:48]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '1', '2013-11-16', '0', '0', '1');
+[2013-11-16 10:52:48]    nuevoCarrito :: Se crea carrito para Cliente id : 1
+[2013-11-16 10:52:48]    ERROR :: SQLSTATE[HY000]: General error
+[2013-11-16 10:55:39]    Login :: User:juan Password:pepe
+[2013-11-16 10:55:39]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '1', '2013-11-16', '0', '0', '1');
+[2013-11-16 10:55:39]    nuevoCarrito :: Se crea carrito para Cliente id : 1
+[2013-11-16 10:55:39]    nuevoCarrito :: ERROR :: SQLSTATE[HY000]: General error
+[2013-11-16 11:02:35]    Login :: User:juan Password:pepe
+[2013-11-16 11:02:35]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 4
+[2013-11-16 11:03:08]    Login :: User:juan Password:pepe
+[2013-11-16 11:04:09]    Login :: User:juan Password:pepe
+[2013-11-16 11:04:09]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '1', '2013-11-16', '0', '0', '1');
+[2013-11-16 11:04:09]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 1
+[2013-11-16 11:06:10]    Login :: User:juan Password:pepe
+[2013-11-16 11:06:10]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 12:37:02]    Login :: User:juan Password:pepe
+[2013-11-16 12:37:02]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 12:37:09]    acerca :: ERROR :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[2013-11-16 12:38:06]    acerca :: ERROR :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[2013-11-16 12:38:43]    acerca :: ERROR :: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[2013-11-16 12:39:38]    verCarrito :: ERROR :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'detallecarrito.IdCarrito ='5'' at line 1
+[2013-11-16 12:40:50]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticuloWHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:40:50]    verCarrito :: ERROR :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'detallecarrito.IdCarrito ='5'' at line 1
+[2013-11-16 12:41:55]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:42:41]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:43:27]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:43:44]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:45:36]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:50:37]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:51:43]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:51:45]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:52:24]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:52:24]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:53:28]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:53:29]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:54:39]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:54:40]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:55:16]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:55:17]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:56:53]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:56:54]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:57:04]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:57:05]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:57:25]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:57:25]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:59:30]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:59:30]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:59:49]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 12:59:50]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 13:05:02]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 13:05:04]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 13:07:15]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 13:07:15]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 13:27:53]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 15:27:56]    Login :: User:juan Password:pepe
+[2013-11-16 15:27:56]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 15:28:06]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 15:28:08]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 15:28:09]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 15:28:11]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 15:28:11]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 15:28:18]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 15:28:20]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 15:34:55]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 15:34:56]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 15:35:04]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 15:35:47]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 15:36:55]    Login :: User:juan Password:pepe
+[2013-11-16 15:36:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 15:36:58]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:02:55]    Login :: User:juan Password:pepe
+[2013-11-16 16:02:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:02:58]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:03:04]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 16:03:04]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 16:03:37]    Login :: User:juan Password:pepe
+[2013-11-16 16:03:37]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:03:42]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:03:45]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 16:03:45]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 16:03:57]    Login :: User:juan Password:pepe
+[2013-11-16 16:03:57]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:04:00]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:04:02]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 16:04:02]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 16:04:06]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:35:59]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:37:29]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:37:29]    buscar :: ERROR :: No se encontraron registros
+[2013-11-16 16:41:40]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:41:49]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:42:00]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:42:16]    Login :: User:root Password:pepe
+[2013-11-16 16:42:54]    Login :: User:juan Password:pepe
+[2013-11-16 16:42:54]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:43:00]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:43:28]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:43:35]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 16:43:35]    verCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 16:44:22]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:45:18]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:55:08]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:59:27]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 16:59:40]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:01:23]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:01:24]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:01:26]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:01:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:01:45]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:01:53]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:01:54]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:06:46]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:06:47]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:06:48]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:06:48]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 17:06:49]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:06:49]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 17:06:51]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:08:14]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:09:40]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:09:40]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 17:09:41]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:09:41]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 17:09:47]    Login :: User:santi Password:santi
+[2013-11-16 17:09:47]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '0', '2013-11-16', '0', '0', '1');
+[2013-11-16 17:09:47]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 0
+[2013-11-16 17:09:47]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 6
+[2013-11-16 17:09:50]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 6
+[2013-11-16 17:09:54]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 6
+[2013-11-16 17:09:54]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 17:09:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 6
+[2013-11-16 17:09:55]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 17:12:23]    Login :: User:juan Password:pepe
+[2013-11-16 17:12:23]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 17:12:26]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:17:49]    Login :: User:juan Password:pepe
+[2013-11-16 20:17:49]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:17:51]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:17:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:17:55]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:17:56]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:17:56]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:18:34]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:18:34]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:18:36]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:18:36]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:19:18]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:19:18]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:19:18]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:19:18]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:21:11]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:21:11]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:21:12]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:21:12]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:21:21]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:21:21]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:21:35]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:21:35]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:21:42]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:21:42]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:21:43]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:21:43]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:23:18]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:23:18]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:23:19]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:23:19]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:23:23]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:23:25]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:23:25]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:23:26]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:23:26]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:23:31]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:23:33]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:23:33]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:23:34]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:23:34]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:23:41]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:23:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:23:55]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 20:23:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 20:23:55]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:12:16]    Login :: User:juan Password:pepe
+[2013-11-16 21:12:16]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:12:19]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:12:30]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:12:30]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:12:30]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:12:30]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:12:35]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:12:35]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:12:35]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:12:57]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:12:57]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:12:58]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:12:58]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:13:00]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:13:00]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:13:01]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:13:01]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:13:04]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:13:04]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:13:04]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:13:04]    addITem :: Se intenta agregar item al carrito
+[2013-11-16 21:13:04]    addItem :: ERROR :: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '5-2' for key 'PRIMARY'
+[2013-11-16 21:13:04]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:13:04]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 21:13:41]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:13:41]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:13:41]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:13:41]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:13:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:13:44]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:13:44]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:13:44]    addITem :: Se intenta agregar item al carrito
+[2013-11-16 21:14:11]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:11]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:14:11]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:11]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:14:15]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:15]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:14:16]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:16]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:14:18]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:25]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:25]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:14:25]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:25]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:14:30]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:30]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:14:30]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-16 21:14:30]    addITem :: Se intenta agregar item al carrito
+[2013-11-16 21:14:30]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 21:14:30]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-16 21:14:30]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:31]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:31]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 21:14:34]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:34]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 21:14:35]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-16 21:14:35]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-16 21:15:09]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:09]    Login :: User:juan Password:pepe
+[2013-11-20 22:38:09]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:12]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:15]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:15]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 22:38:16]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:16]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 22:38:18]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:27]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:27]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 22:38:28]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:28]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 22:38:31]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:31]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 22:38:31]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 22:38:31]    addITem :: Se intenta agregar item al carrito
+[2013-11-20 22:38:31]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 22:38:31]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-20 22:38:31]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:31]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:31]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 22:38:34]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:34]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 22:38:35]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:38:35]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 22:41:34]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:41:37]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:41:37]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 22:41:37]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:41:37]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 22:41:40]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:41:40]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 22:41:40]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 22:41:40]    addITem :: Se intenta agregar item al carrito
+[2013-11-20 22:41:40]    addItem :: ERROR :: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '5-2' for key 'PRIMARY'
+[2013-11-20 22:41:40]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:41:40]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 22:41:42]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:41:42]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 22:41:42]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:41:42]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 22:41:48]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:59:13]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:59:16]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:59:16]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 22:59:39]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:59:39]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 22:59:39]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 2 ;
+[2013-11-20 22:59:58]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:59:58]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 22:59:58]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 2 ;
+[2013-11-20 22:59:58]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 2 ;
+[2013-11-20 22:59:59]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 22:59:59]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 23:01:06]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 23:01:06]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 23:01:06]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 2 ;
+[2013-11-20 23:01:06]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 2 ;
+[2013-11-20 23:01:07]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 23:01:07]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 23:14:12]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 23:14:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 23:14:44]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 23:14:44]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 2 ;
+[2013-11-20 23:14:44]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 2 ;
+[2013-11-20 23:14:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 23:14:44]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 23:15:09]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 23:15:09]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 23:15:09]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-20 23:15:09]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 2 ;
+[2013-11-20 23:15:09]    addITem :: Se intenta agregar item al carrito
+[2013-11-20 23:15:09]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 23:15:09]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-20 23:15:09]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 23:15:09]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 23:15:09]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 23:15:11]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 23:15:11]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 23:15:12]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-20 23:15:12]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-20 23:15:22]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:29:53]    Login :: User:juan Password:pepe
+[2013-11-21 00:29:53]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:29:56]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:29:58]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:29:58]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:29:58]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:29:58]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:30:48]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:30:48]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:30:50]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:30:50]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:30:58]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:30:58]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:30:59]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:30:59]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:31:58]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:31:58]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:31:59]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:31:59]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:32:24]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:32:24]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:32:24]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 1 ;
+[2013-11-21 00:32:24]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 1 ;
+[2013-11-21 00:32:24]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:32:24]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:32:26]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:32:29]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:32:29]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:32:30]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:32:30]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:33:15]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:33:15]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:40:50]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:40:50]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:40:53]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:40:53]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:41:03]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:41:03]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:41:04]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:41:04]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:44:19]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:44:19]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:44:20]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:44:20]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:44:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:44:44]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:44:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:44:44]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:44:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:44:55]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:44:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:44:55]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:45:20]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:45:20]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:45:20]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:45:20]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:45:30]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:45:30]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:45:30]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:45:30]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:45:35]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:45:35]    deleteITem :: Se intenta borrar item al carrito
+[2013-11-21 00:45:35]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:45:35]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 00:45:35]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:45:36]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:45:36]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:45:43]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:45:43]    deleteITem :: Se intenta borrar item al carrito
+[2013-11-21 00:45:44]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:45:44]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 00:45:44]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:45:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:45:44]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:46:02]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:04]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:04]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:46:05]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:05]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:46:28]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:28]    deleteITem :: Se intenta borrar item al carrito
+[2013-11-21 00:46:28]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:46:28]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 00:46:28]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:46:28]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:28]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:46:33]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:37]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:37]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:46:37]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:37]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:46:41]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:41]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:46:41]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 14 ;
+[2013-11-21 00:46:41]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 14 ;
+[2013-11-21 00:46:41]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:41]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:46:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:44]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:46:44]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:46:44]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 14 ;
+[2013-11-21 00:46:44]    addITem :: Se intenta agregar item al carrito
+[2013-11-21 00:46:44]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:46:44]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 00:46:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:44]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:46:51]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:51]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:46:52]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:46:52]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:47:10]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:10]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:47:10]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 14 ;
+[2013-11-21 00:47:10]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 14 ;
+[2013-11-21 00:47:11]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:11]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:47:13]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:18]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:23]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:33]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:35]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:35]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:47:35]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:35]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:47:37]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:37]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:47:37]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 14 ;
+[2013-11-21 00:47:37]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 14 ;
+[2013-11-21 00:47:38]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:38]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:47:41]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:41]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:47:41]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:47:41]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 14 ;
+[2013-11-21 00:47:41]    addITem :: Se intenta agregar item al carrito
+[2013-11-21 00:47:41]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:47:41]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 00:47:41]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:41]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:41]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:47:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:44]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:47:45]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:45]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:47:49]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:49]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:47:49]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 14 ;
+[2013-11-21 00:47:49]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 14 ;
+[2013-11-21 00:47:49]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:49]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:47:51]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:51]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:47:51]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 00:47:51]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 5 AND IdArticulo = 14 ;
+[2013-11-21 00:47:51]    addITem :: Se intenta agregar item al carrito
+[2013-11-21 00:47:51]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:47:51]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 00:47:51]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:52]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:52]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:47:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:55]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 00:47:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 5
+[2013-11-21 00:47:55]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 01:10:40]    Registrar :: User:asdf Password:asdf
+[2013-11-21 01:10:40]    nuevoCliente :: Se intenta crear el cliente
+[2013-11-21 01:11:42]    Registrar :: User:asdf Password:asdf
+[2013-11-21 01:11:42]    nuevoCliente :: Se intenta crear el cliente
+[2013-11-21 01:11:42]    nuevoCliente :: Se intenta crear el user
+[2013-11-21 01:12:38]    Registrar :: User:asdf Password:asdf
+[2013-11-21 01:12:38]    nuevoCliente :: Se intenta crear el cliente
+[2013-11-21 01:12:38]    addItem :: ERROR :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Tal', NULL, NULL, NULL, NULL)' at line 1
+[2013-11-21 01:13:25]    Registrar :: User:fulano Password:fulano
+[2013-11-21 01:13:25]    nuevoCliente :: Se intenta crear el cliente
+[2013-11-21 01:13:25]    nuevoCliente :: Se intenta crear el user
+[2013-11-21 01:13:25]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '14', '2013-11-21', '0', '0', '1');
+[2013-11-21 01:13:25]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 14
+[2013-11-21 01:13:25]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:31]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:37]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:37]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 01:13:37]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 7 AND IdArticulo = 12 ;
+[2013-11-21 01:13:37]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:37]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 01:13:39]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:39]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 01:13:39]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 01:13:39]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 7 AND IdArticulo = 12 ;
+[2013-11-21 01:13:39]    addITem :: Se intenta agregar item al carrito
+[2013-11-21 01:13:39]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 01:13:39]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 01:13:39]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:40]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:40]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 01:13:43]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:43]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 01:13:43]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:43]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 01:13:48]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:48]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 01:13:48]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 7 AND IdArticulo = 12 ;
+[2013-11-21 01:13:48]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 7 AND IdArticulo = 12 ;
+[2013-11-21 01:13:48]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:48]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 01:13:50]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:50]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 01:13:50]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 01:13:50]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 7 AND IdArticulo = 12 ;
+[2013-11-21 01:13:50]    addITem :: Se intenta agregar item al carrito
+[2013-11-21 01:13:50]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 01:13:50]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 01:13:50]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:50]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 7
+[2013-11-21 01:13:50]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:02:12]    Login :: User:juan Password:perez
+[2013-11-21 02:02:12]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 02:02:12]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 02:02:12]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:02:15]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:02:20]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:02:20]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:02:21]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:02:21]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:02:53]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:02:54]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:02:54]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:02:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:02:55]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:02:57]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:02:58]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:02:58]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:02:58]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 8 AND IdArticulo = 2 ;
+[2013-11-21 02:02:59]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:02:59]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:03:01]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:03:01]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:03:01]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:03:01]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 8 AND IdArticulo = 2 ;
+[2013-11-21 02:03:01]    addITem :: Se intenta agregar item al carrito
+[2013-11-21 02:03:01]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:03:01]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:03:02]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:03:02]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:03:02]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:03:04]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:03:04]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:03:04]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:03:04]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:03:25]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:03:25]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:03:26]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:03:26]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:03:36]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:03:36]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:03:37]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:03:37]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:03:46]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:03:46]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:03:46]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:03:46]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:04:03]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:04:05]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:04:05]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:04:05]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:04:05]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:04:07]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:04:07]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:04:08]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:04:08]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:05:57]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:05:57]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:05:58]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:05:58]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:05:59]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:05:59]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:05:59]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:05:59]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:06:00]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:06:00]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:06:01]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:06:01]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:06:02]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:06:02]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:06:02]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:06:02]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:06:40]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:06:40]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:06:41]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:06:41]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:06:43]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:06:43]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:06:44]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:06:44]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:08:32]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:08:32]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:08:33]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:08:33]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:08:39]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:08:40]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:08:40]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:08:41]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:08:41]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:08:50]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:08:50]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:08:50]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:08:50]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:09:54]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:09:54]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:09:55]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:09:55]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:09:59]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 8
+[2013-11-21 02:09:59]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:10:30]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 02:10:30]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 02:10:30]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 9
+[2013-11-21 02:10:30]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:10:41]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 02:10:41]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 02:10:41]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 10
+[2013-11-21 02:10:41]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:11:06]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 02:11:06]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 02:11:06]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 11
+[2013-11-21 02:11:06]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:11:29]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 02:11:29]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 02:11:29]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 12
+[2013-11-21 02:11:29]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:11:42]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 02:11:42]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 02:11:42]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:42]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:11:42]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 13 AND IdArticulo = 2 ;
+[2013-11-21 02:11:43]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:43]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:11:45]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:45]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:11:45]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:11:45]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 13 AND IdArticulo = 2 ;
+[2013-11-21 02:11:45]    addITem :: Se intenta agregar item al carrito
+[2013-11-21 02:11:45]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:11:45]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:11:45]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:46]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:46]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:11:51]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:51]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:11:51]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 13 AND IdArticulo = 15 ;
+[2013-11-21 02:11:51]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:51]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:11:54]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:54]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:11:54]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:11:54]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 13 AND IdArticulo = 15 ;
+[2013-11-21 02:11:54]    addITem :: Se intenta agregar item al carrito
+[2013-11-21 02:11:54]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:11:54]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:11:54]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:54]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:54]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:11:56]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:56]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:11:57]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:11:57]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:12:08]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 13
+[2013-11-21 02:12:08]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:12:19]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 02:12:19]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 02:12:19]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:12:19]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:12:19]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:12:19]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:12:23]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:12:48]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:18:18]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:18:18]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:18:18]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 14 AND IdArticulo = 2 ;
+[2013-11-21 02:18:18]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:18:18]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:18:20]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:18:20]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:18:20]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:18:20]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 14 AND IdArticulo = 2 ;
+[2013-11-21 02:18:20]    addITem :: Se intenta agregar item al carrito
+[2013-11-21 02:18:20]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:18:20]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:18:20]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:18:21]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:18:21]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:18:21]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:18:21]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:18:22]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:18:22]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:18:25]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 14
+[2013-11-21 02:18:25]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:19:24]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 02:19:24]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 02:19:24]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 15
+[2013-11-21 02:19:24]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:20:25]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 02:20:25]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 02:20:25]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 16
+[2013-11-21 02:20:29]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 16
+[2013-11-21 02:20:43]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 16
+[2013-11-21 02:20:43]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:20:43]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 16 AND IdArticulo = 2 ;
+[2013-11-21 02:20:43]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 16
+[2013-11-21 02:20:43]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:20:45]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 16
+[2013-11-21 02:20:45]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:20:45]    getArticulo :: SQL :: SELECT * FROM articulo WHERE IdArticulo = :id
+[2013-11-21 02:20:45]    carritoHasItem :: Intenta ejecutar SELECT * FROM detallecarrito WHERE IdCarrito = 16 AND IdArticulo = 2 ;
+[2013-11-21 02:20:45]    addITem :: Se intenta agregar item al carrito
+[2013-11-21 02:20:46]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:20:46]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:20:46]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 16
+[2013-11-21 02:20:46]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 16
+[2013-11-21 02:20:46]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:20:47]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 16
+[2013-11-21 02:20:47]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:20:48]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 16
+[2013-11-21 02:20:48]    getDetalleCarrito :: SQL :: SELECT * FROM detallecarrito JOIN articulo ON detallecarrito.IdArticulo = articulo.IdArticulo WHERE detallecarrito.IdCarrito =:id
+[2013-11-21 02:20:50]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 16
+[2013-11-21 02:20:50]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:21:51]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 02:21:51]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 02:21:51]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 17
+[2013-11-21 02:21:51]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 17
+[2013-11-21 02:21:51]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 02:21:51]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 02:21:51]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 02:21:51]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 18
+[2013-11-21 03:28:54]    obtenerCarrito :: Tiene Carrito Activo. Carrito id : 18
+[2013-11-21 03:28:54]    actualizarCarrito :: Se intenta actualizar carrito
+[2013-11-21 03:28:54]    nuevoCarrito :: SQL : INSERT INTO `carrito` (`IdCarrito`, `IdCliente`, `Fecha`, `CantArt`, `MontoTotal`, `Activo`) VALUES (NULL, '11', '2013-11-21', '0', '0', '1');
+[2013-11-21 03:28:54]    nuevoCarrito :: Se intenta crear carrito para Cliente id : 11
+[2013-11-21 03:28:55]    obtenerCarrito :: Nuevo y ahora tiene Carrito Activo. Carrito id : 19

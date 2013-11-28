@@ -1,0 +1,35 @@
+<div class="modal fade" id="modal-registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Registrarse</h4>
+      </div>
+      <div class="modal-body">
+        
+          
+          <form action="{{path}}registrar" method="post" >
+            <center>
+              <h3>Nombre de Usuario:</h3>
+              <input type="text" name="user" id="user" placeholder="Nombre de Usuario">
+              <br>
+              <h3>Password:</h3>
+              <input type="password" name="password" id="password" placeholder="Contraseña">
+              <br>
+              <hr>
+              <h3>Datos Personales</h3>
+              <hr>
+              <input type="text" name="nombre" id="nombre" placeholder="Nombre...">
+              <br>
+              <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+              <br>
+              <input type="submit" value="Registrarse!" class="btn btn-success">
+              
+            </center>  
+          </form>
+
+              
+      </div>
+    </div>
+  </div>
+</div>
